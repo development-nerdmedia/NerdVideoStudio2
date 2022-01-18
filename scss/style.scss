@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: inherit;
+}
+
+:root {
+  --fuente-epilogue: "Epilogue", sans-serif;
+  --fuente-josefin: "Josefin Sans", sans-serif;
+  --color-fondo: #bced09;
+  --color-text: #3822e4;
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+.container {
+  width: 85%;
+  max-width: 1266px; /*1408*/
+  margin: 0 auto;
+}
+
+nav {
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  a {
+    text-decoration: none;
+  }
+  .navLeft {
+    font-family: var(--fuente-epilogue);
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 32px;
+    color: var(--color-text);
+  }
+  a.navRight {
+    font-family: var(--fuente-epilogue);
+    font-weight: 900;
+    font-size: 16px;
+    background-color: var(--color-text);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+}
+
+a.navMidRight {
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+
+.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    background-color: var(--color-text);
+    color: #fff;
+    padding: 10px 33px;
+    margin: 11px 0;
+    font-size: 56px;
+    font-family: var(--fuente-epilogue);
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+  }
+  h2 {
+    background-color: var(--color-text);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 11px 0;
+    font-size: 56px;
+    font-family: var(--fuente-josefin);
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+    width: 542px;
+  }
+}
+
+.contenido {
+  width: 100%;
+  .tarjetas {
+    position: relative;
+    // width: 100%;
+    // height: 2341px;
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      font-family: var(--fuente-josefin);
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .tarjeta1 {
+      width: 534px;
+      position: absolute;
+      right: 0;
+      top: 300px;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+      h3 {
+        text-align: end;
+        padding-right: 100px;
+      }
+      &:hover {
+        z-index: 2;
+      }
+    }
+    .tarjeta2 {
+      width: 352px;
+      position: absolute;
+      top: 528px;
+      z-index: -1;
+      img {
+        width: 351px;
+      }
+      h3 {
+        text-align: center;
+        padding-right: 100px;
+      }
+      &:hover {
+        z-index: 2;
+      }
+    }
+    .tarjeta3 {
+      width: 439px;
+      position: absolute;
+      right: 0;
+      top: 1229px;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+      h3 {
+        position: relative;
+        top: -80px;
+        text-align: end;
+        padding-right: 20px;
+      }
+      &:hover {
+        z-index: 2;
+      }
+    }
+    .tarjeta4 {
+      width: 560px;
+      position: absolute;
+      top: 1568px;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+      h3 {
+        text-align: end;
+        padding-right: 50px;
+        position: relative;
+        top: -130px;
+      }
+      &:hover {
+        z-index: 2;
+      }
+    }
+  }
+  .footer {
+    position: relative;
+    top: 2289px;
+    padding-bottom: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    .btns {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    a {
+      color: var(--color-text);
+      text-decoration: none;
+      padding: 10px 0;
+      font-family: var(--fuente-josefin);
+      font-weight: 700;
+      font-size: 30px;
+    }
+    p {
+      width: 404px;
+      font-family: var(--fuente-epilogue);
+      font-size: 22px;
+      color: var(--color-text);
+    }
+  }
+}
